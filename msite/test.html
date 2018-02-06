@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<script type="text/javascript" src="../../js/mui.min.js" ></script>
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+
+		<link rel="stylesheet" href="test.css" />
+		<script type="text/javascript" src="test.js" ></script>
+	</head>
+	<body>
+		<div></div>
+		<header></header>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">标题</h1>
+		</header>
+		<div class="mui-content">
+			<button onclick="goWebFun()">调转</button>
+		    <div class="mui-slider">
+		      <div class="mui-slider-group">
+		        <!--第一个内容区容器-->
+		        <div class="mui-slider-item">
+		          <!-- 具体内容 -->
+		        </div>
+		        <!--第二个内容区-->
+		        <div class="mui-slider-item">
+		          <!-- 具体内容 -->
+		        </div>
+		      </div>
+		    </div>
+		    
+		</div>
+		
+	</body>
+</html>
+<script>
+	$(function(){
+//		goWebFun();
+	history.replaceState("","","/muiPro/html/test/test");
+	})
+	function goWebFun(){
+		//  history.replaceState("","","allgoods.jsp?active=3&c_active=2&offset="+from);
+		
+		window.location.href = "http://192.168.7.15:8020/muiPro/html/test/test.html?__hbt=1516177287952";
+	}
+</script>
